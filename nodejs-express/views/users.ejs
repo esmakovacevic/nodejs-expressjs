@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="/stylesheets/style.css" />
+    <title>Document</title> 
+</head>
+<body>
+    <div class="external">
+   <form class="forma" action="/users/create" method="POST">
+<h1>Enter data</h1>
+<div class="polje">
+    <p>Full Name </p>
+    <input type="text"placeholder="Enter Full Name" name="fullName" >
+</div>
+<div class="polje">
+    <p>Email Address </p>
+    <input type="text"  name="emailAddress" placeholder="Enter Email Address">
+</div>
+<div class="polje">
+    <p>City </p>
+    <input type="text" name="city" placeholder="Enter Full City">
+</div>
+<div class="polje">
+    <p>Country </p>
+    <input type="text" name="country" placeholder="Enter Full Country">
+</div>
+
+<a href="/users/user-list/" class="link">Show data</a>
+<button class="submit" type="submit">Submit</button>
+</form>
+
+</div>
+</body>
+</html>

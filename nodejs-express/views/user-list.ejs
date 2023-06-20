@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fetch using MySQL and Node.js</title>
+  <link rel="stylesheet"  href="/stylesheets/style.css" />
+</head>
+<body>
+    <div class="tabela-lista">
+        <table class="tabela" >
+            <tr>
+                <th>ID</th>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>City</th>
+                <th>Country</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+            <% if(userData.length!=0){
+                userData.forEach(function(data){ %>
+                    <tr>
+                    <td><%=data.id; %></td>
+                    <td><%=data.fullName %></td>
+                    <td><%=data.emailAddress %></td>
+                    <td><%=data.city %></td>
+                    <td><%=data.country %></td>
+                    <td><a href="/users/edit/<%=data.id%>">Edit</a></td>
+                    <td><a href="/users/delete/<%=data.id%>">Delete</a></td>
+                </tr>
+               <%  })%>
+               <%  }else{ %>
+                    <tr>
+                        <td>No Data Found</td>
+                    </tr>
+               <%}%>
+        </table>
+    </div>
+</body>
+</html>

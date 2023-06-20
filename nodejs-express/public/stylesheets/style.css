@@ -1,0 +1,77 @@
+body {
+ padding: 0;
+ margin: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+text-align: center;
+background-color: lightblue;
+}
+
+a {
+  color: #00B7FF;
+}
+.external{
+  padding: 100px;
+}
+.forma{
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  max-height: 400px;
+  padding: 30px;
+  border: 3px solid black;
+  border-radius: 5px;
+  background-color: rgb(101, 191, 221);
+}
+.polje{
+  display: flex;
+  padding: 10px;
+}
+.polje input{
+  
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 5px;
+  max-height: auto;
+}
+
+.polje p{
+  padding: 5px;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+}
+
+.submit{
+  height: 40.5px;
+  width: 118px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  margin-left: 10px;
+  font-size: 19px;
+  margin-top: 3px;
+}
+table,th,td{
+  border: 1px solid;
+}
+.tabela{
+border-collapse: collapse;
+}
+.link{
+  text-decoration: none;
+  height: 0px;
+  width: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  margin-left: 56px;
+  font-size: 18px;
+  margin-top: 3px;
+}
